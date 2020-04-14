@@ -1,7 +1,6 @@
 \documentclass{article}
 
 \usepackage[utf8]{inputenc}
-\usepackage{natbib}
 \usepackage{graphicx}
 %\usepackage{caption}
 %\usepackage{subcaption}
@@ -22,6 +21,10 @@
 % and since I have the Overleaf professor edition we can also share it with
 % more than two people (for example if Brooklyn Pritchard ever needs it. 
 
+% biology style references
+\usepackage[round,authoryear]{natbib}
+\bibliographystyle{apalike}
+
 
 % need a better title
 \title{RoboRoach Report EW496}
@@ -38,13 +41,15 @@ DIRECTION OF PAPER: I THINK I WILL EVALUATE THE DIFFERENT METHODS AND RESULTS AN
 
 
 \section{Introduction}
+Test citation here \citep{buck2020go}.
+
 \section{Methods and materials}
 \section{Results}
 \section{Discussion}
 \section{Acknowledgments}
 
-% references go here
-%\biblography{pak.bib}
+% References
+\bibliography{pak.bib}
 \end{document}
 
 
