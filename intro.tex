@@ -1,9 +1,32 @@
 \section{Introduction}
-Go from broad to narrow. Why is this an interesting topic/question? Literature review stuff here. Test citation in (Author Year) format here \citep{buck2020go}. 
 
-A literature review is appropriate here. Moore et al found that they could do fun stuff with Slovenian cockroaches \citep{moore1998directed}. A more detailed study of higher neural structures showed that blah \citep{guo2013neural}. How can engineering be used to alter or steer these biological structures? Electrical stimulation of contralateral nerve enters did blah \citep{holzer1997locomotion}. By adding external computer vision, Whitmire et al found blah \citep{whitmire2013kinect}. 
+% Why is this topic important?
 
-Should end with what is your guiding research question and what hypotheses are you intending to test. Based on the findings of these previous workers, I intend to test something cool... I hypothesize that... Alternatively blah... 
+Although the human nervous system is very different from a cockroach’s, the structure and function of our individual neurons is actually very similar. This similarity allows us to learn about the human brain by studying cockroaches'. Invertebrates, including insects like cockroaches, are important model systems in neurophysiology because of their small, manageable size, the ability to easily access specific motor neurons that innervate entire specific muscle groups, and the presence of central pattern generators that produce locomotive behaviors. 
+
+% Literature Review
+
+\bigskip
+
+Many people have already conducted research on and tested the feasibility of steering a cockroach using electrical stimulation. Moore, Crary, Koditscheck, and and Conklin were able to "drive" Slovenian cockroaches through a zig-zagged track \citep{moore1998directed}. They found that, although results varied, only a small fraction of the cockroaches responded and were consistently sensitive to the stimuli \citep{moore1998directed}. They also discovered that, in most cases, current directed toward the base of an antenna resulted in faster forward motion whereas current directed further down the antenna resulted in slow walking, halting, and even reverse motion \citep{moore1998directed}.
+
+\bigskip
+
+A more detailed study of higher neural structures showed that, the central complex, a part of the arthropod brain that receives sensory information and outputs to premotor regions, supervises locomotion \citep{guo2013neural}. Guo and Ritzmann performed the same type of experiment as Moore et. al., but also created firing maps based on the roaches' continuously changing speed and direction, which demonstrated that many of the central complex units they recorded were tuned to particular turning and forward walking speeds \citep{guo2013neural}.
+
+\bigskip
+
+Like the previous two experiments, Holzer and Shimoyama also applied electrical stimulation of nerves using an electronic backpack \citep{holzer1997locomotion}. Unlike the previous experiments, however, they recorded their measurements on a styrofoam trackball connected to a computer, which allowed them to record the turning rate and forward movement in response to stimulation to the roach's antennae \citep{holzer1997locomotion}. Their experiments also showed that, despite large variance, they could achieve directional locomotion control by stimulating the nerves of cockroaches' antennae.
+
+\bigskip
+
+Whitmire, Latif, and Bozkurt demonstrated how engineering can be used to steer cockroaches by adding external computer vision, making the application of electrical stimulus autonomous \citep{whitmire2013kinect}. By observing successful trials of cockroach steering, the team found that the deviation from the prescribed path and the net angular change and velocity when turning could be used to create a quantitative analysis of the experiment \citep{whitmire2013kinect}. Unlike the previous study, which required a human operator to manually stimulate with a remote control, this one steered the roaches using a computer vision platform that automatically stimulates the roaches \citep{whitmire2013kinect}. The computer vision platform allowed for automated variation in stimulation patterns as the cockroach adjusted its path \citep{whitmire2013kinect}. From the quantitative analysis, the team was able to get a precise estimate of the effects of each stimulus, allowing the to optimize the efficacy of their stimulation technique \citep{whitmire2013kinect}. 
+
+\bigskip
+
+% What do I intend to do, hypothesize, etc?
+
+Based on the findings of these previous experiments, I intend to replicate their experiments to evaluate the feasibility of a future lab exercise involving cyborg cockroaches. My ultimate aim of steering a cockroach is to learn about neurophysiological and neuromechanical principles which may be applicable in restoring human function. I hypothesize that that there will be large variance in results and less than 25\% of trials will be successful, but the successful trials will demonstrate that stimulation of the left antenna will steer the cockroach right and vice versa for the opposite antenna. I also hypothesize that, for the cockroaches that do respond, more current will result in sharper and wider turns.
 
 
 
@@ -11,54 +34,3 @@ Should end with what is your guiding research question and what hypotheses are y
 
 
 
-%PAK Scholarly Articles for Research
-Tom Daniel
-
-Robert full
-Neural activity in the central complex of the cockroach brain is linked to turning behaviors 
-Wired up to cockroach brain to observe neural activity
-Stimulated antennae to make cockroach turn
-%https://jeb.biologists.org/content/216/6/992
-
-Simon Sponberg
-
-Jean Mongeau
-Locomotion- and mechanics-mediated tactile sensing: antenna reconfiguration simplifies control during high-speed navigation in cockroaches
-When the tip of the antenna is projected backward, the animals maintain greater body-to-wall distance with fewer body collisions and less leg–wall contact than when the tip is projecting forward
-Tested natural and artificial mechanosensory hairs at the tip of the antenna; both  increased an antenna's probability of switching state
-%https://jeb.biologists.org/content/216/24/4530
-
-Shai Revzen
-The neuromechanics of insect locomotion: How cockroaches run fast and stably without much thought
-Mathematical modeling? I’m having a hard time understanding this journal
-%https://pdfs.semanticscholar.org/0479/660d2057a2ca7ac1d24a5061fcd731364ba8.pdf
-
-Ty Hedrick
-
-Hirotaka Sato, Christopher W. Berry, Yoav Peeri, Emen Baghoomian, Brendan E. Casey, Gabriel Lavella, John M. VandenBrooks, Jon F. Harrison and Michel M. Maharbiz
-Remote radio control of insect flight
-demonstrated the remote control of insects in free flight via an implantable radio-equipped miniature neural stimulating system
-VERY RELEVANT BUT THEY USED BEATLES % Beatles is the band; beetles is the wildly diverse insect clade
-%https://www.frontiersin.org/articles/10.3389/neuro.07.024.2009/full
-
-Thomas E Moore, Selden B Crary, Daniel E Koditschek, Todd A Conklin
-Directed Locomotion in Cockroaches: BioBots
-Electrically stimulated antennae of Madagascar Hissing Cockroach to make it turn or followed prescribed paths
-%https://www.zobodat.at/pdf/ActaEntSlov_6_0071-0078.pdf
-
-R. Holzer, I. Shimoyama
-Locomotion control of a bio-robotic system via electric stimulation
-Electrically stimulates Periplaneta Americana to observe reactions
-%https://ieeexplore.ieee.org/document/656559
-
-Alper Bozkurt, Amit Lal, Robert Gilmour
-Aerial and terrestrial locomotion control of lift assisted insect biobots
-Electrically stimulates moths to steer wirelessly
-%https://ieeexplore.ieee.org/document/5334433
-
-Whitmire E, Latif T, Bozkurt A.
-Kinect-based system for automated control of terrestrial insect biobots
-Uses neural stimulation techniques in order to control the motion of Madagascar hissing cockroaches
-%https://ieeexplore.ieee.org/document/6609789/
-
-Link to backyard brains robo surgery: %https://backyardbrains.com/experiments/roboRoachSurgery
