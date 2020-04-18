@@ -4,25 +4,36 @@
 
 Although the human nervous system is very different from a cockroach’s, the structure and function of our individual neurons is actually very similar. This similarity allows us to learn about the human brain by studying cockroaches'. Invertebrates, including insects like cockroaches, are important model systems in neurophysiology because of their small, manageable size, the ability to easily access specific motor neurons that innervate entire specific muscle groups, and the presence of central pattern generators that produce locomotive behaviors. 
 
+
+%On Mon, Nov 11, 2019 at 9:10 PM Alexis Pak <m215112@usna.edu> wrote:
+%Good evening sir,
+%
+%It was good seeing you out in town today! I was thinking about the robo-roach project and was wondering what the applications (particularly military) of creating a robo-roach are? The project sounds really cool but I've been asking myself all weekend why I would want to wirelessly control a cockroach and can't seem to find a reason. I know they can definitely survive conditions that humans cannot, but what would they accomplish? Finding something? Spying on someone or something? Just some food for thought- I was wondering if you had any ideas! Thank you and have a great night.
+%
+%1. Spying. Have you seen the movie The Fifth Element? They glue a camera on a roach, and then use control to drive it to check something out. Otherwise in civilian science world they call this mission "search and recovery". 
+%
+%2. Neuromechanics / as a model system for other systems that are harder to work on. For example, imagine a patient with compromised neuromuscular control. The principles used to drive a roach around might be relevant for restoring function in such a patient. Alternatively, what is learned about roach control may transfer to other robot designs or control systems. Roaches are notable for _not_ controlling everything; they make use of passive mechanical feedback mechanisms to simplify the task of the neural controllers; this could allow for high performance parkour like robots in the future. Can you make the roach outperform the EW456 RC car? The base plant definitely does... The roaches can have much more invasive things done than we would ever do to a human patient during initial trials or basic research of a device, so such work is foundational for eventual applications like that. 
+%
+%#2 is the main reason there are entire labs that do cockroach neuromechanics. Google "Bob Full Berkeley lab" and "Tom Daniel UW lab" and "Ty Hedrick UNC lab" for example. We had speakers for biomechaincs seminar that work in this area - Jean Michel Mongeau (PSU) and Noah Cowan (JHU) and will have two more this week and next (Chen Li and Bo Cheng). Also check Simon Sponberg Georgia Tech; Shai Revzen and Talia Moore (Michigan). 
+%
+%If there's other things you'd like to try during 282D or 496 (whichever) then we can make room for that too. Backyard Brains is just one thing I want to try in the spring to see how accessible it is for mids, possibly use it in future course offerings, or as something a motivated mid could build a project around.
+
+
+
+
+
 % Literature Review
+Many people have already conducted research on and tested the feasibility of steering a cockroach using electrical stimulation. \citet{moore1998directed} were able to ``drive'' Slovenian cockroaches through a zig-zagged track. They found that, although results varied, only a small fraction of the cockroaches responded and were consistently sensitive to the stimuli \citep{moore1998directed}. They also discovered that, in most cases, current directed toward the base of an antenna resulted in faster forward motion whereas current directed further down the antenna resulted in slow walking, halting, and even reverse motion \citep{moore1998directed}.
 
-\bigskip
+A more detailed study of higher neural structures showed that, the central complex, a part of the arthropod brain that receives sensory information and outputs to premotor regions, supervises locomotion \citep{guo2013neural}. \citet{guo2013neural} performed the same type of experiment as \citet{moore1998directed}, but also created firing maps based on the roaches' continuously changing speed and direction, which demonstrated that many of the central complex units they recorded were tuned to particular turning and forward walking speeds.
 
-Many people have already conducted research on and tested the feasibility of steering a cockroach using electrical stimulation. Moore, Crary, Koditscheck, and and Conklin were able to "drive" Slovenian cockroaches through a zig-zagged track \citep{moore1998directed}. They found that, although results varied, only a small fraction of the cockroaches responded and were consistently sensitive to the stimuli \citep{moore1998directed}. They also discovered that, in most cases, current directed toward the base of an antenna resulted in faster forward motion whereas current directed further down the antenna resulted in slow walking, halting, and even reverse motion \citep{moore1998directed}.
+Like the previous two experiments, \citet{holzer1997locomotion} also applied electrical stimulation of nerves using an electronic backpack. Unlike the previous experiments, however, they recorded their measurements on a styrofoam trackball connected to a computer, which allowed them to record the turning rate and forward movement in response to stimulation to the roach's antennae \citep{holzer1997locomotion}. Their experiments also showed that, despite large variance, they could achieve directional locomotion control by stimulating the nerves of cockroaches' antennae.
 
-\bigskip
+\citet{whitmire2013kinect} demonstrated how engineering can be used to steer cockroaches by adding external computer vision, making the application of electrical stimulus autonomous. By observing successful trials of cockroach steering, the team found that the deviation from the prescribed path and the net angular change and velocity when turning could be used to create a quantitative analysis of the experiment \citep{whitmire2013kinect}. Unlike the previous study, which required a human operator to manually stimulate with a remote control, this one steered the roaches using a computer vision platform that automatically stimulates the roaches \citep{whitmire2013kinect}. The computer vision platform allowed for automated variation in stimulation patterns as the cockroach adjusted its path \citep{whitmire2013kinect}. From the quantitative analysis, the team was able to get a precise estimate of the effects of each stimulus, allowing the to optimize the efficacy of their stimulation technique \citep{whitmire2013kinect}. 
 
-A more detailed study of higher neural structures showed that, the central complex, a part of the arthropod brain that receives sensory information and outputs to premotor regions, supervises locomotion \citep{guo2013neural}. Guo and Ritzmann performed the same type of experiment as Moore et. al., but also created firing maps based on the roaches' continuously changing speed and direction, which demonstrated that many of the central complex units they recorded were tuned to particular turning and forward walking speeds \citep{guo2013neural}.
 
-\bigskip
 
-Like the previous two experiments, Holzer and Shimoyama also applied electrical stimulation of nerves using an electronic backpack \citep{holzer1997locomotion}. Unlike the previous experiments, however, they recorded their measurements on a styrofoam trackball connected to a computer, which allowed them to record the turning rate and forward movement in response to stimulation to the roach's antennae \citep{holzer1997locomotion}. Their experiments also showed that, despite large variance, they could achieve directional locomotion control by stimulating the nerves of cockroaches' antennae.
 
-\bigskip
-
-Whitmire, Latif, and Bozkurt demonstrated how engineering can be used to steer cockroaches by adding external computer vision, making the application of electrical stimulus autonomous \citep{whitmire2013kinect}. By observing successful trials of cockroach steering, the team found that the deviation from the prescribed path and the net angular change and velocity when turning could be used to create a quantitative analysis of the experiment \citep{whitmire2013kinect}. Unlike the previous study, which required a human operator to manually stimulate with a remote control, this one steered the roaches using a computer vision platform that automatically stimulates the roaches \citep{whitmire2013kinect}. The computer vision platform allowed for automated variation in stimulation patterns as the cockroach adjusted its path \citep{whitmire2013kinect}. From the quantitative analysis, the team was able to get a precise estimate of the effects of each stimulus, allowing the to optimize the efficacy of their stimulation technique \citep{whitmire2013kinect}. 
-
-\bigskip
 
 % What do I intend to do, hypothesize, etc?
 
