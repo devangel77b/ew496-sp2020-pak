@@ -1,40 +1,64 @@
-\documentclass{article}
-\usepackage{graphicx} % package for displaying graphics
-
-\usepackage[utf8]{inputenc}
-\usepackage{graphicx}
-\usepackage{siunitx}
-\usepackage{caption}
-\usepackage{subcaption}
-%\usepackage{pdfpages}
-%\usepackage{listings}
-%\usepackage{soul}
-%\usepackage{enumitem,amssymb}
-
-\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
-\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
-\definecolor{mylilas}{RGB}{170,55,241}
-
-% For Prof Evangelista to make comments
-\usepackage[colorinlistoftodos]{todonotes}
+\documentclass[10pt]{article}
 
 % This version is also synced with a Github repository at
 % https://github.com/devangel77b/ew496-sp2020-pak.git 
 % and since I have the Overleaf professor edition we can also share it with
 % more than two people (for example if Brooklyn Pritchard ever needs it. 
 
-% biology style references
+\title{RoboRoach: active steering of neuro-implanted cockroaches}
+\author{Alexis Pak\thanks{Author is with the Department of Weapons, Robotics, and Control Engineering at the United States Naval Academy. Addess for correspondence: \emph{m21xxxx@usna.edu}}}
+\date{\today}
+
+% todo
+% Surgery appendix fix
+% first scrub of intro, methods, anticipated results, and discussion
+% All figures show Blaberus discoidalis so I added it to list of animals? 
+
+\usepackage[utf8]{inputenc}
+\usepackage[separate-uncertainty=true,multi-part-units=single]{siunitx}
+\DeclareSIUnit{\year}{y}
+\DeclareSIUnit{\inch}{in}
+\DeclareSIUnit{\foot}{ft}
+\DeclareSIUnit{\poundforce}{lbf}
+\DeclareSIUnit{\pound}{lb}
+\DeclareSIUnit{\frame}{frame}
+\usepackage{graphicx}
 \usepackage[round,authoryear]{natbib}
 \bibliographystyle{apalike}
+\usepackage[plain]{fancyref}
+\usepackage{listings}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{booktabs}
+\lstset{%
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  showstringspaces=false}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{hyperref}
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=violet,
+  urlcolor=blue,
+  citecolor=blue}
+\usepackage{svg}
+\usepackage{fullpage}
+\newcommand{\Matlab}{Matlab}
+\usepackage{caption}
+\usepackage{subcaption}
 
-\usepackage{fancyref}
-% Evangelista note: should add amsmath and friends, listings if needed, hyperref for links and urls
+
+% For editing
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+% For Prof Evangelista to make comments
+\usepackage[colorinlistoftodos]{todonotes}
 
 
-% need a better title
-\title{RoboRoach: active steering of neuromechanical preparations of American cockroaches (\emph{Periplaneta americana}) and Madagascar hissing cockroaches (\emph{Blaberus discoidalis})}
-\author{Alexis Pak}
-\date{\today}
+
+
+
+
 
 \begin{document}
 \maketitle
@@ -55,12 +79,14 @@ Some organisms rely on their antennae to determine the position or texture of ob
 
 \section{Acknowledgments}
 I thank Brooklyn Pritchard and Professor Evangelista for comments and discussion that helped my thinking on this topic, as well as Sofia Figueroa, Cameron Smith, and John Trombetta for assistance and discussions the course of EW282D / EW496.
-% I thank Brooklyn Pritchard, Sofia Figueroa, Cameron Smith, and John Trombetta for comments and discussion that helped my thinking on this topic; (others?)...
 
 % References
 \bibliography{pak.bib}
 
+\clearpage
 \appendix 
+\renewcommand{\figurename}{Supplementary Figure}
+\renewcommand{\thefigure}{S\arabic{figure}}
 \input{surgery-procedure.tex} % Detailed roach surgery as appendix
 \end{document}
 
